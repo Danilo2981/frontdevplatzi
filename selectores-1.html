@@ -6,61 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* Selector descendiente afecta a lo que contiene */
-        div p {
-            color: lime;
+        /* www.htmlcolorcodes.com */
+        /* Selector universal */
+        * {
+            background: papayawhip;
         }
-        /* Selector Hijo directo */
-        div > div {
-            background-color: plum;
+        /* Selector de tipo */
+        div {
+            background: pink;
         }
-        .es {
-            background: red;
-            color: white;
+        /* Selector de clase */
+        .titulo {
+            color: blue;
         }
-        /* Selector de Elementos Adyacentes al mismo nivel  */
-        div + section {
-            background: palegoldenrod;
+        /* Selector de id */
+        #titulo2 {
+            color: brown;
         }
-        /* Selector de hermanos */
-        div ~ p {
-            color: paleturquoise;
-        }
-        div ~ label {
-            color: blueviolet;
+        /* Selector de atributo */
+        a[href="https://www.dimedical.center"] {
+            color: red;
         }
     </style>
 </head>
 <body>
-    <!-- /* Selector descendiente afecta a lo que contiene */ -->
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptas aspernatur fuga necessitatibus vero placeat rerum labore aut quam blanditiis distinctio ipsa esse voluptatem impedit saepe non, nobis natus unde.</p>
-        <p>Dolore enim nam tempora rerum vitae eveniet, aliquam commodi perferendis consectetur excepturi quaerat. Aliquam eligendi nesciunt non iure provident asperiores eveniet libero saepe nihil aspernatur, explicabo fugiat molestiae quam voluptate.</p>
-    </div>
-    <!-- /* Selector Hijo directo */ -->
-    <div>
-        <div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nesciunt delectus perferendis tempore porro maxime earum laboriosam harum illo aspernatur! Eum veritatis nemo perspiciatis quidem dolor. Expedita fugit assumenda inventore!</p>
-            <div class="es">Hijo directo</div>
-        </div>
-    </div>
-    <!-- /* Selector de hermanos */ -->
-    <p>Clase de selectores</p>
-    <p>Clase de selectores</p>
-    <!-- /* Selector de Elementos Adyacentes al mismo nivel  */ -->
-    <section>
-        Es lo mejor
-    </section>
-    <div>Master</div>
-
-    <div>
-        <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis possimus, modi minima maxime molestiae velit similique earum laboriosam tenetur harum accusamus optio consectetur voluptatem sunt eius. Sint culpa odio commodi.</p>
-        </div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus debitis hic perferendis alias quasi voluptate, iste dolor excepturi temporibus natus odio omnis eaque magni obcaecati quaerat! Odio, dicta? Ducimus, aspernatur?</p>
-        <label for="">Hola</label>
-        <input type="text">
-    </div>
-    
+    <div class="titulo">Hola</div>
+    <div id="titulo2">Mundo</div>
+    <a href="https://www.dimedical.center">Dimedical</a>
 </body>
 </html>

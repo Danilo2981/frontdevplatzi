@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 30px;
+        }
+        p {
+            color: salmon;    
+        }
+        /* Pseudoclases, permiten crear movimientos */
+        p:hover {
+            color: skyblue;
+        }
+        /* Afecta solo al segundo p  */
+        div p:nth-child(2) {
+            color: violet;
+        }
+        /* Pseudoelementos permite cambiar puntualmente */
+        p::first-letter {
+            color: teal;
+        }
+        p::before {
+            content: "🎶";
+        }
+        p::after {
+            content: "😎";
+        }
+        input::placeholder {
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui veritatis ratione vitae quae deleniti animi, fugiat nihil mollitia voluptatem natus doloremque accusantium sed ex, minima labore, dolores quidem id.</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
